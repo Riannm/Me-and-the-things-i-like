@@ -103,23 +103,27 @@ section ul li:hover {
 
 
 .mangas-list img {
-    width: 150px;
+    width: 110px;
     border-radius: 8px;
 }
 
 .books-list img {
-    width: 160px;
+    width: 110px;
     border-radius: 6px;
 }
 
 .movies-list img {
-    width: 150px;
+    width: 110px;
     border-radius: 6px;
 }
 
 .games-list img  {
-    width: 150px;
+    width: 110px;
     border-radius: 6px;
+}
+
+.vaga {
+    width: 100px;
 }
 
 header div {
