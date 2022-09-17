@@ -34,7 +34,7 @@ header div img {
 
     border-radius: 50%;
     display: flex;
-    padding: 3px;
+    padding: 4px;
 
     transition: transform .3s;
 }
@@ -53,13 +53,10 @@ main {
     max-width: 580px;
     width: 90%;
     margin: 32px auto;
-    /*max-height: 264px;
-    height: 90%;*/
 
     display: grid;
     gap: 24px;
 
-    margin-top: 32px;
 }
 
 section {
@@ -93,47 +90,66 @@ section ul {
 
 }
 
-section ul li img {
-    border-radius: 6px;
-}
-
-
-/* Display e tudo que você vê no CSS, tudo que é visual */
-
 section ul li{
-    transition: tranform .3s;
+    transition: transform 0.3s;
 }
 
 section ul li:hover {
     transform: scale(1.1);
 }
 
-.games-list img {
-    width: 90px;
+
+/* Display e tudo que você vê no CSS, tudo que é visual */
+
+
+.mangas-list img {
+    width: 150px;
     border-radius: 8px;
 }
 
+.books-list img {
+    width: 160px;
+    border-radius: 6px;
+}
 
-/*animation*/
+.movies-list img {
+    width: 150px;
+    border-radius: 6px;
+}
 
-header div img {
+.games-list img  {
+    width: 150px;
+    border-radius: 6px;
+}
+
+header div {
     animation: fromTop .7s .2s backwards;
+    
 }
 
-main section {
-    animation: fromBottom .7s backwards;
+main section  {
+    animation: fromBotton .7s backwards;
+    
 }
 
-main section :nth-child(1) {
-    animation-delay: 0; 
+main section:nth-child(1) {
+    animation-delay: .0s;
 }
 
-main section :nth-child(2) {
+main section:nth-child(2) {
+    animation-delay: .2s;
+}
+
+main section:nth-child(3) {
     animation-delay: .4s;
 }
 
-main section :nth-child(3) {
+main section:nth-child(4) {
     animation-delay: .8s;
+}
+
+main section:nth-child(5) {
+    animation-delay: .12s;
 }
 
 @keyframes fromTop {
@@ -148,7 +164,7 @@ main section :nth-child(3) {
     }
 }
 
-@keyframes fromBottom {
+@keyframes fromBotton {
     from {
         opacity: 0;
         transform: translateX(-30px);
